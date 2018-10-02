@@ -1,3 +1,5 @@
+/*Task1*/
+
 img {
 	width: 50%;
 	height: auto;
@@ -6,4 +8,95 @@ img {
 	background: url('../img/waterfall.jpg') no-repeat left top;
 	width: 500px;
 	height: 300px;
+}
+
+/*Task 2*/
+
+/* Task #2.1*/
+.square {
+	width: 250px;
+	height: 250px;
+	padding: 2.5%;
+	margin: 75px 25px;
+	border: 20px solid lightblue;
+	background-color: green;
+}
+/*Task #2.2*/
+.square div {
+	background-color: brown;
+	margin-left: 25%;
+	border: 5px dashed yellow;
+	width: 50%;
+	height: 50%;
+}
+/*Task #2.3*/
+#first, #third {
+	margin: 0px 0px 125px 0px; /*on 50px more then in .square class*/
+	/*margin-bottom: 30px;*/
+}
+#second, #fourth {
+	margin: -125px 0px 0px 0px; /*0 vertical margin between first 2 divs*/	
+
+	/*margin-top: 40px; the bigger value will work so second block goes down by 40px, margin-bottom: 30px won't work*/
+}
+
+/*Task #2.4 - select div .class-12*/
+
+body .class-12, /*Get outer most div using class name*/ 
+body #id-1 /*using id*/,
+body:nth-child(5) { /*div number 5 after 4 squares*/
+	background-color: rgb(141, 188, 143);
+	width: 30%;
+	margin-top: 5%;
+	font-size: 40px;
+}
+/*Select div .class-14*/
+
+.class-12 .class-14,
+.class-12 #id-2,
+.class-12 > div {
+	background-color: rgb(162, 211, 210);
+	font-size: 0.75em;
+}
+
+/*Setting common settings for .class-12 and .class-14*/
+body .class-12,
+body .class-12 .class-14 {
+	padding: 2.5%;
+	font-weight: bold;
+	font-family: Courier;
+}
+
+/*Selecting ids with same names*/
+
+.class-12 #id-2 { /*This will get #id-2 with class .class-14*/
+	border: 1px solid black;
+}
+.class-14 #id-2 /*li #id-2*/ {
+	border: 1px solid red;	
+}
+
+/*Select ul*/
+
+.class-12 .class-14 .class-14,
+.class-12 .class-14 ul,
+#id-1 #id-2 > ul {
+	background-color: rgb(202, 216, 149);
+	border: 1px solid orange;
+}
+
+/*Select second li*/
+.class-12 .class-14 ul:nth-child(2), /*option #1*/
+.class-12 .class-14 ul #id3, /*option #2*/
+ul li[id$="3"] /*option #3*/
+ {
+	background-color: rgb(168, 131, 193); /*purple*/
+	margin-left: 100px;
+	list-style-type: none;
+	border: 5px solid white;
+}
+.class-12 .class-14 ul li { /*common settings for all li*/
+	margin-left: 5%;
+	color: blue;
+	font-size: 0.75em;
 }
