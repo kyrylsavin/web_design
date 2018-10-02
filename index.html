@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Test page</title>
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
-</head>
-<body>
-	<!--Using css backgound-->
-	<div class="background"></div>
-	<!--IMG tag-->
-	<img alt="jpg" src="./img/birds.jpg"/>
-	<img alt="png" src="./img/mario.png">
-	<img alt="svg" src="./img/book.svg">
-	<img alt="gif" src="./img/monkey.gif">
-	<img alt="ico" src="./img/palm.ico">	
-</body>
+   <head>
+      <title>Test page</title>
+      <link rel="stylesheet" type="text/css" href="./css/styles.css">
+   </head>
+   <body>
+      <!--Using css backgound-->
+      <div class="background"></div>
+      <!--IMG tag-->
+      <img alt="jpg" src="./img/birds.jpg"/>
+      <img alt="png" src="./img/mario.png">
+      <img alt="svg" src="./img/book.svg">
+      <img alt="gif" src="./img/monkey.gif">
+      <img alt="ico" src="./img/palm.ico">
+      <div id="first" class="square">
+         <div></div>
+      </div>
+      <div id="second" class="square">
+         <div></div>
+      </div>
+      <div id="third" class="square">
+         <div></div>
+      </div>
+      <div id="fourth" class="square">
+         <div></div>
+      </div>
+      <div id="id-1" class="class-12" disabled>
+         class-12
+         <div id="id-2" class="class-14">
+            class-14
+            <ul class="class-14">
+               ul
+               <li id="id-2">li #id-2</li>
+               <!--Opps, div already has id-2, not good...-->
+               <li id="id3">li #id3</li>
+               <li id="id4">li #id3</li>
+               <li id="id5">li #id5</li>
+            </ul>
+         </div>
+      </div>
+   </body>
 </html>
