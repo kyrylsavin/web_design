@@ -44,7 +44,7 @@ img {
 
 body .class-12, /*Get outer most div using class name*/ 
 body #id-1 /*using id*/,
-body:nth-child(5) { /*div number 5 after 4 squares*/
+body:nth-child(6) { /*div number 6 after background and 4 squares*/
 	background-color: rgb(141, 188, 143);
 	width: 30%;
 	margin-top: 5%;
