@@ -1,0 +1,96 @@
+.base {
+     width: 600px;
+     height: 600px;
+     position: absolute;
+     margin: 15% 25%;
+}
+ .base div {
+     position: inherit;
+    /*all childs absolute*/
+}
+ .body {
+     height: 75%;
+     top: 30%;
+     width: 100%;
+     background-image: url("../img/brick.jpg");
+     word-spacing: 200px;
+     border-bottom: 25px solid rgb(102, 51, 0);
+     z-index: 1;
+}
+ .door {
+     background: rgb(102, 51, 0);
+     top: 50%;
+     height: 50%;
+     width: 25%;
+     left: 37.5%;
+     z-index: 3;
+}
+ .window {
+     background: rgb(82, 0, 204);
+     width: 25%;
+     height: 35%;
+     left: 5%;
+     word-spacing: 5px;
+     border-left: 5px solid rgb(82, 0, 204);
+     border-right: 5px solid rgb(82, 0, 204);
+     z-index: 4;
+}
+ .downstairs {
+     bottom: 15%;
+}
+ .upstairs {
+     bottom: 60%;
+}
+ #second {
+     left: 65%;
+}
+ .window div:first-child, .balcony div:first-child, .window div:last-child, .balcony div:last-child {
+     width: 40%;
+     background-color: rgb(153, 153, 255);
+     height: 80%;
+     top: 10%;
+     left: 7%;
+     z-index: 5;
+}
+ .window div:last-child, .balcony div:last-child {
+     left: 55%;
+}
+ .roof {
+     height: 0;
+     width: 0%;
+     border-left: 300px solid transparent;
+     border-right: 300px solid transparent;
+     border-bottom: 300px solid red;
+     bottom: 70%;
+     z-index: 1;
+}
+ .chimney {
+     width: 15%;
+     height: 25%;
+     background: brown;
+     bottom: 85%;
+     left: 15%;
+     z-index: 0;
+}
+ .door div {
+     width: 5%;
+     height: 15%;
+     top: 30%;
+     left: 10%;
+     background: rgb(255, 85, 0);
+}
+ .balcony {
+     width: 30%;
+     height: 25%;
+     top: 0%;
+     left: 35%;
+     background: rgb(82, 0, 204);
+     border-radius: 100px 100px 0px 0px;
+     z-index: 6;
+}
+ .balcony div:first-child {
+     border-radius: 100px 0px 0px 0px;
+}
+ .balcony div:last-child {
+     border-radius: 0px 100px 0px 0px;
+}
