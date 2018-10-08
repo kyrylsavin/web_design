@@ -42,7 +42,7 @@
      display: inline-block;
     /*to set in row 2 windows*/
 }
- .window div, .balcony div {
+ .window div, .upperw div {
      display: inline-block;
      width: 40%;
      background-color: rgb(153, 153, 255);
@@ -50,6 +50,13 @@
      top: 10%;
      left: 7%;
      z-index: 5;
+}
+.balcony {
+     height: 75px;
+     width: 175px;
+     bottom: 105%;
+     left: -29%;
+     background-image: url("../img/brick.jpg");
 }
  .roof {
      height: 0;
@@ -75,7 +82,7 @@
      left: 10%;
      background: rgb(255, 85, 0);
 }
- .balcony {
+ .upperw {
      width: 30%;
      height: 25%;
      top: -125%;
@@ -84,9 +91,9 @@
      border-radius: 100px 100px 0px 0px;
      z-index: 6;
 }
- .balcony div:first-child {
+ .upperw div:first-child {
      border-radius: 100px 0px 0px 0px;
 }
- .balcony div:last-child {
+ .upperw div:last-child {
      border-radius: 0px 100px 0px 0px;
 }
