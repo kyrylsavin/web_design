@@ -12,7 +12,7 @@
  .body {
      height: 50%;
      top: 40%;
-     width: 40%;
+     width: 450px;
      background-image: url("../img/brick.jpg");
      word-spacing: 200px;
      border-bottom: 25px solid rgb(102, 51, 0);
@@ -55,6 +55,13 @@
      height: 12%;
      z-index: 5;
 }
+.balcony {
+     height: 75px;
+     width: 175px;
+     top: 50%;
+     left: 10%;
+     background-image: url("../img/brick.jpg");
+}
  #w1, #w4 {
      left: 28.5%;
 }
@@ -92,7 +99,7 @@
      left: 45%;
      background: rgb(255, 85, 0);
 }
- .balcony {
+ .upperw {
      width: 15%;
      height: 15%;
      top: 20%;
@@ -101,17 +108,17 @@
      border-radius: 100px 100px 0px 0px;
      z-index: 6;
 }
- .balcony div {
+ .upperw div {
      width: 6%;
      background-color: rgb(153, 153, 255);
      height: 11%;
 }
- .balcony div:first-child {
+ .upperw div:first-child {
      top: 22.5%;
      left: 38.5%;
      border-radius: 100px 0px 0px 0px;
 }
- .balcony div:last-child {
+ .upperw div:last-child {
      left: 45%;
      top: 22.5%;
      border-radius: 0px 100px 0px 0px;
