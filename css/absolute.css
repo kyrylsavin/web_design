@@ -44,7 +44,7 @@
  #second {
      left: 65%;
 }
- .window div:first-child, .balcony div:first-child, .window div:last-child, .balcony div:last-child {
+ .window div:first-child, .upperw div:first-child, .window div:last-child, .upperw div:last-child {
      width: 40%;
      background-color: rgb(153, 153, 255);
      height: 80%;
@@ -52,8 +52,15 @@
      left: 7%;
      z-index: 5;
 }
- .window div:last-child, .balcony div:last-child {
+ .window div:last-child, .upperw div:last-child {
      left: 55%;
+}
+.balcony {
+     height: 75px;
+     width: 175px;
+     top: 47.5%;
+     left: -29%;
+     background-image: url("../img/brick.jpg");
 }
  .roof {
      height: 0;
@@ -79,7 +86,7 @@
      left: 10%;
      background: rgb(255, 85, 0);
 }
- .balcony {
+ .upperw {
      width: 30%;
      height: 25%;
      top: 0%;
@@ -88,9 +95,9 @@
      border-radius: 100px 100px 0px 0px;
      z-index: 6;
 }
- .balcony div:first-child {
+ .upperw div:first-child {
      border-radius: 100px 0px 0px 0px;
 }
- .balcony div:last-child {
+ .upperw div:last-child {
      border-radius: 0px 100px 0px 0px;
 }
