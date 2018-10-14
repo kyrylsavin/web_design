@@ -1,0 +1,127 @@
+* {
+     box-sizing: border-box;
+}
+ body {
+     width: 95%;
+     margin: auto;
+     background: linear-gradient(white, #426c79);
+}
+ header {
+     overflow: hidden;
+}
+ header .logo, .footer__logo img {
+     display: block;
+     width: 100%;
+     max-width: 250px;
+     float: left;
+}
+ .logo img {
+     margin-top: 15px;
+     width: 100%;
+}
+ header p {
+     padding: 1% 5%;
+     color: #f2e2dd;
+     font-family: Georgia, Verdana, Arial;
+     font-size: 20px;
+     font-style: italic;
+     border-left: 15px solid #f89554;
+     margin: 15px 0;
+     background: #426c79 url("cube.svg") no-repeat center right;
+     background-size: contain;
+     float: right;
+     width: 70vw;
+}
+ header p, main section p {
+     text-align: justify;
+     text-indent: 30px;
+}
+ header div:first-letter {
+     font-size: 36px;
+     color: #f89554;
+}
+ main {
+     max-width: 1200px;
+     width: 100%;
+     margin: 25px 0;
+}
+ main .content:nth-child(odd) img {
+     float: left;
+}
+ main .content:nth-child(even) img {
+     float: right;
+}
+ .content {
+     overflow: hidden;
+     margin: 15px 0;
+}
+ .content p {
+     color: #00213a;
+     font-family: 'Open Sans';
+     line-height: 1.75;
+     position: relative;
+     padding: 25px 0;
+}
+ .content:nth-child(even) p {
+     padding: 0 2.5%;
+     right: 2%;
+}
+ .content:nth-child(odd) p {
+     padding: 0 2.5%;
+     left: 2%;
+}
+ .content img {
+     border: 10px solid #000712;
+     border-radius: 15px;
+}
+ .footer__email {
+     margin: 50px 50px 0 0;
+     float: right 
+}
+ .footer__email input {
+     color: gray;
+     padding: 2.5%;
+}
+ .footer__section {
+     width: 17.5%;
+     height: auto;
+     display: inline-block;
+     margin-left: 25px;
+     background: #000712;
+     color: #e8d8d4;
+     font-family: Georgia;
+     padding: 1% 2%;
+     vertical-align: top;
+     font-size: 14px;
+     word-wrap: break-word;
+     font-style: italic;
+}
+ nav {
+     margin: 20px 0;
+}
+ nav li {
+     display: inline-block;
+     list-style-type: none;
+     text-transform: uppercase;
+     font-family: 'Open Sasn', Verdana;
+     color: #e8d8d4;
+     font-size: 20px;
+     width: 24.75%;
+     text-align: center;
+}
+ nav li:hover {
+     text-decoration: underline;
+     cursor: pointer;
+}
+ .footer__email button {
+     background: #2a3640;
+     color: white;
+     font-family: Georgia;
+     border: none;
+     font-size: 1.1em;
+     padding: 5% 10%;
+}
+ .footer__email button:hover {
+     cursor: pointer;
+     background: #000712;
+}
