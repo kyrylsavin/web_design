@@ -1,10 +1,16 @@
 * {
      box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+ html, body {
+     height: 100%;
 }
  body {
      width: 95%;
      margin: auto;
-     background: linear-gradient(white, #426c79);
+     background: linear-gradient(white 70%, #426c79);
+     background-attachment: fixed;
 }
  header {
      overflow: hidden;
@@ -12,15 +18,15 @@
  header .logo, .footer__logo img {
      display: block;
      width: 100%;
-     height: auto; 
+     height: auto;
      max-width: 300px;
      float: left;
 }
-.logo img {
-	width: 100%;
+ .logo img {
+     width: 100%;
 }
-.footer__logo img {
-	max-width: 150px;
+ .footer__logo img {
+     max-width: 250px;
 }
  .logo img {
      margin-top: 15px;
@@ -35,8 +41,7 @@
      margin: 15px 0;
      background: #426c79 url("./img/cube.svg") no-repeat center right;
      background-size: contain;
-     width: 100%;
-     max-width: 700px;
+     width: 65%;
      float: right;
 }
  header p, main section p {
@@ -47,24 +52,26 @@
      font-size: 36px;
      color: #f89554;
 }
- main {
-     max-width: 1200px;
-     width: 100%;
-     margin: 25px 0;
-}
  main .content:nth-child(odd) img {
      float: left;
 }
  main .content:nth-child(even) img {
      float: right;
 }
+ .wrapper {
+     display: table;
+     height: 100%;
+}
+ main {
+     display: table-row;
+     height: 100%;
+}
  .content {
-     overflow: hidden;
-     margin: 15px 0;
+     margin: 25px 0;
 }
  .content p {
      color: #00213a;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', Verdana, Arial;
      line-height: 1.75;
      position: relative;
      padding: 25px 0;
@@ -80,6 +87,9 @@
  .content img {
      border: 10px solid #000712;
      border-radius: 15px;
+}
+ .footer__row {
+     margin-top: 20px;
 }
  .footer__email {
      margin: 50px 50px 0 0;
@@ -97,9 +107,9 @@
      background: #000712;
      color: #e8d8d4;
      font-family: Georgia;
-     padding: 1% 2%;
+     padding: 1.5% 1.5%;
      vertical-align: top;
-     font-size: 14px;
+     font-size: 16px;
      word-wrap: break-word;
      font-style: italic;
      margin-left: 5%;
@@ -121,6 +131,9 @@
      text-decoration: underline;
      cursor: pointer;
 }
+ button {
+     margin-top: 15px;
+}
  .footer__email button {
      background: #2a3640;
      color: white;
@@ -133,22 +146,31 @@
      cursor: pointer;
      background: #000712;
 }
-@media only screen and (max-width: 1000px) {
-	.footer__section {
-		width: 90%;
-          display: block;
-		margin: 25px auto;
-	}
-	.footer__logo {
-		overflow: hidden;
-	}
-	.footer__email {
-		position: relative;
-		bottom: 450px;
-	}
+ @media only screen and (max-width: 1000px) {
+     .footer__section {
+         width: 90%;
+         display: block;
+         margin: 10px 0;
+    }
+     .footer__logo {
+         overflow: hidden;
+    }
+     .footer__email {
+         position: relative;
+         bottom: 25px;
+    }
      nav li {
-          display: block;
-          margin: auto;
-          padding: 2% 0;          
-     }
+         margin: auto;
+         padding: 2% 0;
+         margin-left: 25px;
+    }
+     header p {
+         width: 100%;
+    }
+}
+ @media only screen and (max-width: 400px) {
+     nav li {
+         width: 100%;
+         margin: auto;
+    }
 }
