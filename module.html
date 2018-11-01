@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>variant 4</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<style>
+	#first, #second, #third {
+		background: purple;
+		width: 150px;
+		height: 150px;
+	}
+	#second {
+		margin-left: 11%;
+	}
+	#third {
+		margin-left: 22%;
+	}
+	.base {
+		width: 450px;
+		height: 150px;
+	}
+	.base div:nth-child(0) {
+		background: red;
+	}
+	.base div:nth-child(1) {
+		background: yellow;
+	}
+	.base div:nth-child(2) {
+		background: green;
+	}
+	.base div {
+		background: blue;
+		width: 33%;
+		height: 100%;
+		float: left;
+	}
+	.triangle {
+		height: 0;
+     	width: 0;
+     	border-left: 100px solid transparent;
+     	border-right: 100px solid transparent;
+     	border-bottom: 100px solid red;
+     	display: none;
+	}
+	.square {
+		width: 150px;
+		height: 150px;
+		background: red;
+	}
+	@media only screen and (max-width: 700px) {
+		.sqaure {
+			visibility: none;
+		}
+		.round {
+			display: block
+		}
+	}
+</style>
+<body>
+	<!--#1-->
+	<span>#id ~ li (0, 1, 0, 1) > a + .cl1 (0,0, 1, 1)</span>
+	<!--#2-->
+	<div id="first"></div>
+	<div id="second"></div>
+	<div id="third"></div>
+	<!--#3-->
+	<div class="base">
+		<div class="position one"></div>
+		<div class="position two"></div>
+		<div class="position three"></div>
+	</div>
+	<!--#4-->
+	<div class="square triangle"></div>
+</body>
+</html>
