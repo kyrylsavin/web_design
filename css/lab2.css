@@ -146,7 +146,7 @@
      cursor: pointer;
      background: #000712;
 }
- @media only screen and (max-width: 1000px) {
+ /*@media only screen and (max-width: 1000px) {
      .footer__section {
          width: 90%;
          display: block;
@@ -173,4 +173,4 @@
          width: 100%;
          margin: auto;
     }
-}
+}*/
