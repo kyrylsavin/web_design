@@ -39,7 +39,7 @@
      font-style: italic;
      border-left: 15px solid #f89554;
      margin: 15px 0;
-     background: #426c79 url(./img/"cube.svg") no-repeat center right;
+     background: #426c79 url(./img/cube.svg") no-repeat center right;
      background-size: contain;
      width: 65%;
      float: right;
