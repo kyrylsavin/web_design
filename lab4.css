@@ -18,19 +18,19 @@
 	}
 	@font-face {
     	font-family: Medium;
-    	src: url(./fonts/catamaran_medium.ttf);
+    	src: url(catamaran_medium.ttf);
     }
     @font-face {
     	font-family: Regular;
-    	src: url(./fonts/catamaran_regular.ttf);
+    	src: url(catamaran_regular.ttf);
 	}
 	@font-face {
     	font-family: Light;
-    	src: url(./fonts/catamaran_light.ttf);
+    	src: url(catamaran_light.ttf);
 	}
 	@font-face {
     	font-family: Black;
-    	src: url(./fonts/catamaran_black.ttf);
+    	src: url(catamaran_black.ttf);
 	}
 	header .header__left h4 {
 		font-family: Medium;
